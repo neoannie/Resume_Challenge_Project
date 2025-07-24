@@ -1,83 +1,41 @@
+# Resume Challenge Project
 
-Resume Challenge Project
-Welcome to my Resume Challenge Project repository! This project showcases not only my resume but also acts as a full portfolio deployment built with AWS. It highlights my hands-on experience in setting up a static website with a fully automated 2-stage CI/CD pipeline.
+Welcome to my Resume Challenge Project repository! This project showcases more than my resume—it’s my portfolio. It displays my skills and experience in setting up a static website using AWS services, including a two-stage CI/CD pipeline.
 
-🚀 Project Overview
-This project deploys a static website hosted on Amazon S3, triggered by code commits pushed to GitHub. It uses a 2-stage CI/CD pipeline to deploy first to a staging environment and then to production. This setup demonstrates my DevOps and cloud engineering skills.
+## Project Overview
 
-✅ Key AWS Services Used:
-•	Amazon S3: Static website hosting
-•	GitHub: Source code and version control
-•	AWS CodePipeline: CI/CD orchestration
-•	Amazon CloudFront: Content delivery network (CDN)
-•	Amazon Route 53: DNS management
-•	AWS Certificate Manager (ACM): SSL/TLS certificates
+This project sets up a CI/CD pipeline to automatically deploy a static website to an Amazon S3 bucket. The source code is hosted in my GitHub repository. Services used include:
 
-🧱 Architecture
-Architecture Diagram portfolio.diagram.png
+- **S3 Bucket**: To store and host the static files.
+- **GitHub**: As the version control system.
+- **AWS CodePipeline**: To automate the CI/CD process.
+- **CloudFront**: For content delivery.
+- **Route 53**: For DNS management.
+- **ACM**: For SSL/TLS certificates.
 
-🔧 Services Breakdown
-•	S3: Hosts static website files (HTML, CSS, JS)
-•	CodePipeline:
-•	Source Stage: Pulls source from GitHub
-•	Deploy Stage: Deploys files to S3
-•	CloudFront: Speeds up content delivery
-•	Route 53: Manages custom domain DNS
-•	ACM: Enables HTTPS via SSL/TLS
-⚙️ CI/CD Pipeline
+## Architecture
 
-1. Staging Stage
- Deploys the latest code to a staging environment
-Used for testing and review
+![Architecture](architecture.png)
 
-2.Production Stage
-Deploys tested changes from staging to production
+## CI/CD Pipeline
 
-🛠️ Setup Instructions
-Prerequisites
-•	AWS Account with IAM permissions
-•	Registered domain name (e.g., from Route 53 or another provider)
-•	Basic knowledge of AWS & GitHub
+- **Staging**: Deploys to a test environment.
+- **Production**: Deploys to the live environment after testing.
 
-Steps to Set Up
+## Setup Instructions
 
-1.Clone the repository
-bash
-[GitHub Repo] (https://github.com/anniesingsit/resume-challenge)
-2.Create an S3 bucket
-•	Go to AWS Console > S3 > Create bucket
-•	Enable static website hosting
+1. Clone the repository.
+2. Create an S3 bucket and upload your website files.
+3. Set up AWS CodePipeline with GitHub integration.
+4. Configure CloudFront for global content delivery.
+5. Use Route 53 to manage domain settings.
+6. Use ACM for HTTPS/SSL.
+7. Push your code to GitHub — CodePipeline handles the rest!
 
+## Production URL
 
-3.Set up CodePipeline
-•	Go to CodePipeline > Create pipeline
-•	Connect to GitHub repo
-•	Add a Deploy stage to S3
+[https://singsit.azzyalfie.com](https://singsit.azzyalfie.com)
 
-4.Configure CloudFront
-•	Set S3 bucket as origin
-•	Configure caching and viewer settings
+## License
 
-5.Set up Route 53
-•	Create a hosted zone
-•	Add DNS records pointing to CloudFront
-
-6.Request SSL/TLS via ACM
-•	Request a public certificate
-•	Use DNS validation with Route 53
-
-Deploy
-•	Push changes to GitHub
-•	CodePipeline automatically deploys to S3
-
-🌐 Production URL
-Access the live site here:
-🔗 https://singsit.azzyalfie.com 
-
-
-🤝 Contributing
-Feel free to fork this repo and submit a pull request.
-For major changes, please open an issue first to discuss your ideas.
-
-📄 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
