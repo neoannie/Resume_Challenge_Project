@@ -25,7 +25,7 @@ This setup demonstrates my **DevOps** and **Cloud Engineering** skills.
 
 ## 🧱 Architecture
 
-![Architecture Diagram](./diagram.png)
+![Architecture Diagram](portfolio./diagram.png)
 
 <details>
 <summary>View as Mermaid Diagram</summary>
