@@ -78,27 +78,30 @@ flowchart TD
 
 ### Steps to Set Up
 
-1. **Clone the repository**  
+1. **Clone the repository**
+
+   git clone https://github.com/your-username/portfolio-project.git
+cd portfolio-project
    [GitHub Repo](https://github.com/anniesingsit/resume-challenge)
 
-2. **Create an S3 bucket**  
+3. **Create an S3 bucket**  
    - Go to AWS Console > S3 > Create bucket  
    - Enable static website hosting
 
-3. **Set up CodePipeline**  
+4. **Set up CodePipeline**  
    - Go to CodePipeline > Create pipeline  
    - Connect to GitHub repo  
    - Add a Deploy stage to S3
 
-4. **Configure CloudFront**  
+5. **Configure CloudFront**  
    - Set S3 bucket as origin  
    - Configure caching and viewer settings
 
-5. **Set up Route 53**  
+6. **Set up Route 53**  
    - Create a hosted zone  
    - Add DNS records pointing to CloudFront
 
-6. **Request SSL/TLS via ACM**  
+7. **Request SSL/TLS via ACM**  
    - Request a public certificate  
    - Use DNS validation with Route 53
 
