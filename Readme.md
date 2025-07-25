@@ -80,9 +80,9 @@ flowchart TD
 
 1. **Clone the repository**
 
-   git clone https://github.com/your-username/portfolio-project.git
-cd portfolio-project
-   [GitHub Repo](https://github.com/anniesingsit/resume-challenge)
+git clone https://github.com/anniesingsit/resume-challenge.git
+cd resume-challenge
+
 
 3. **Create an S3 bucket**  
    - Go to AWS Console > S3 > Create bucket  
